@@ -1,10 +1,10 @@
 
 # редактирование файла (конспекта)
-## nano git_basics.md
-## git status
-## git add git_basics.md
-## git commit -m "Update git basics notes"
-## git log
+- nano git_basics.md
+- git status
+- git add git_basics.md
+- git commit -m "Update git basics notes"
+- git log
 
 
 ## git status
@@ -50,12 +50,10 @@
 	-  новый проект (вы начинаете разрабатывать проект с нуля и хотите отслеживать его изменения
 	-  существующий проект (у вас уже есть папка с файлами, и вы хотите начать использовать Git)
 	-  после клонирования (обычно не нужна - `git clone` уже создает репозиторий)
-- пример использования
-	  ```
-	    cd my_project     #перейти в папку проекта
-	    git init          #инициализировать репозиторий
-	    ls -la            #вы увидите папку `.git`
-	  ```
+- пример использования:
+	-  `cd my_project`     #перейти в папку проекта
+	-  `git init`          #инициализировать репозиторий
+	-  `ls -la`            #вы увидите папку `.git`
 	-  после этого папка становится Git репозиторием и вы можете:
 	-    добавлять файлы командой `git add`
 	-    создавать коммиты командой `git commit`
@@ -83,13 +81,11 @@
              `git commit`
 	-  repository (история, `.git`)
 - пример:
-	   ```
-	     nano git_basics.md             #редактировать файл в нано
-	     git status			    #файл изменился, но Git его не видит в истории
-	     git add git_basics.md	    #добавляете в staging area
-	     git status			    #"Changes to be committed"
-	     git commit -m "Update notes"   #коммитите (сохраняете в историю)
-	   ```
+	-  `nano git_basics.md`             #редактировать файл в нано
+	-  `git status`			    #файл изменился, но Git его не видит в истории
+	-  `git add git_basics.md`	    #добавляете в staging area
+	-  `git status`			    #"Changes to be committed"
+	-  `git commit -m "Update notes"`   #коммитите (сохраняете в историю)
 - опции
 	-  `git add git_basics.md`    #добавить один файл
 	-  `git add .`                #добавить ВСЕ изменённые файлы
@@ -101,11 +97,10 @@
 - как использовать
 	-  `git commity -m "описание изменений"`   #`-m` = message (сообщение)
 - пример:
-	   ```
-	     git add git_basics.md
-	     git commit -m "Add git basics notes"
-	     git log
-	   ```
+	-  `git add git_basics.md`
+	-  `git commit -m "Add git basics notes"`
+	-  `git log`
+
 
 ## git push
 - отправляет ваши коммиты на удалённый сервер (GitHub, GitLab)
@@ -114,9 +109,8 @@
 	- `git add`  - `git commit` - `git push`
 	- подготовка    сохранение     отправка
 - пример:
-	   ```
-	    git push origin main   #origin - имя удалённого сервера, main - ветка (основная)
-	   ```
+	-  ` git push origin main`   #origin - имя удалённого сервера, main - ветка (основная)
+
 
 ## git pull
 - скачивает коммиты с удалённого сервера на ваш пк (забрать изменения из репозитория)
@@ -126,7 +120,5 @@
 	-                   git pull
 	-                  (скачивание)
 - пример:
-	   ```
-	    git pull origin main   #скачиваются все новые коммиты с GitHub на ваш пк
-	   ```
+	-  ` git pull origin main`   #скачиваются все новые коммиты с GitHub на ваш пк
 
