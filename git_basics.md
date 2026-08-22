@@ -3,7 +3,13 @@
 ## nano git_basics.md
 - открыть файл в нано
 ## git status
-- проверить статус
+- показывает текущее состояние репозитория - какие файлы изменены, какие добавлены в staging area,
+   и какие не отслеживаются Git.
+- что выводит `git status`
+    -  Untacked   #файл существует, но Git его не отслеживает (никогда не был добавлен через `git add`)
+    -  Modified   #файл был изменен, но изменения еще не добавлены в staging area
+    -  Staged     #файл добавлен в staging ared (через `git add`) и готов к коммиту
+    -  Committed  #файл уже закоммичен и не изменялся
 ## git add git_basics.md
 ## git commit -m "Update git basics notes"
 - закоммитить изменения
