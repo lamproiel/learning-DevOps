@@ -122,3 +122,14 @@
 - пример:
 	-  ` git pull origin main`   #скачиваются все новые коммиты с GitHub на ваш пк
 
+
+## как пушить на гитхаб
+- создать репо
+- локально настроить Git
+	-  `git remove add origin git@github.com:<ИМЯ>/<НАЗВАНИЕ РЕПО>.git`
+	-  `git branch -M main`
+	-  `gut push -u origin main`   #`-u` свящываит веику с удалённой - дальше можно просто git push
+- каждый раз после 
+	-  `git add .`             #добавить файлы
+	-  `git commit -m "..."`   #сделать коммит
+	-  `git push`              #отправить на GitHub
